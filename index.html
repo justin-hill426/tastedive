@@ -13,8 +13,8 @@
   <h3>Generate Random </h3>
     <input id="getRandom" type="submit" value="Random"></input>
   <div class = "container">
-    <p>This app uses the <a href="https://tastedive.com/read/api">TasteDive API</a> to
-      explore personalized information about something you love</p>
+    <p>This app uses the <a href="https://www.themealdb.com/api.php">MealDB API</a> to
+      bring you new food and recipes</p>
     <form class="pure-form>" <fieldset>
       <legend>Enter a Book, Music Artist, or Movie to get started</legend>
       <input id="artistInput" type="text" placeholder="Search For Something You Love"></input><br/>
@@ -30,9 +30,12 @@
       <button id="woo" class="pure-button pure-button-primary">Woo!</button>
       </fieldset>
     </form>
+    <div class = "getCategory">
+      <input id="categoryInput" type="text" placeholder="Search Food By Category"></input><br/>
+      <input id="categorySubmit" type="submit" value="Submit"></input>
+    </div>
     <p id="results"></p>
   </div>
-
   <footer>
     <p id = "names">Justin Hill and Savannah Knight</p>
     <div class = "footer-link">

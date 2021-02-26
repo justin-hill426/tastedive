@@ -9,12 +9,15 @@ body {
     height: 100%;
     background-color: #3668ff;
     font-family: URW Chancery L, cursive;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100vh
 }
 
 input {
@@ -34,10 +37,11 @@ text-align: center;
 footer {
     font-family: URW Chancery L, cursive;
     background-color: #3668ff;
-    position: absolute;
+    position: relative;
     bottom: 0;
     margin: 0 auto;
     width: 100%;
+    margin-top: auto;
 }
 
 #names {
@@ -48,6 +52,38 @@ footer {
 .footer-link {
     text-align: center;
 }
+
+.meal-grid {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    max-width: 97%;
+    text-align: center;
+  }
+
+  .mealResults {
+    width: 100%;
+    background-color: black;
+    padding: 1em;
+    margin: 1em 1em 1em 1em;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    .meal-grid {
+      grid-template-columns: 1fr 1fr;
+      max-width: 93%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .meal-grid {
+      grid-template-columns: 1fr 1fr;
+      max-width: 87%;
+      margin-left: 0;
+    }
+  }
+
 
 
 
