@@ -7,10 +7,13 @@
 body {
     color: white;
     height: 100%;
-    background-color: #3668ff;
+    background-color: #c0d7fc;
     font-family: URW Chancery L, cursive;
     display: flex;
     flex-direction: column;
+}
+h2, h3, p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -47,11 +50,36 @@ footer {
 #names {
     text-align: center;
 }
-
-
+.random {
+  /* background-color: #b5cef7; */
+  text-align: center;
+  justify-content: center;
+  margin: 1em;
+  /* margin: 2em;
+  padding: 1em; */
+}
+.enjoy {
+   padding: 1em;
+   text-transform: capitalize;
+   font-size: 3em;
+   font-weight: bolder;
+   font-family: URW Chancery L, cursive;
+}
+.area {
+  padding: 20px;
+}
+.image {
+  width: 200px;
+}
 .footer-link {
     text-align: center;
 }
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+@media only screen and (max-width: 400px) {
 
 .meal-grid {
     margin-bottom: 20px;
@@ -83,7 +111,3 @@ footer {
       margin-left: 0;
     }
   }
-
-
-
-
