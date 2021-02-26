@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="utf-8" />
+<<<<<<< HEAD
+  <title>Creative Project 2</title>
+=======
   <title>Taste Dive</title>
+>>>>>>> 408282ed67db08f6ffc4819800f7c92e8807ac51
   <link rel="stylesheet" href="/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
