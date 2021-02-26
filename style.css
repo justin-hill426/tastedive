@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    height: 100%;
+    background-color: #3668ff;
+    font-family: URW Chancery L, cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    min-width: 4em;
+    max-width: fit-content;
+}
+h1 {
+font-size: 6em;
+text-align: center;
+}
+
+.pure-form {
+    align-content: center;
+    align-self: center;
+}
+
+footer {
+    font-family: URW Chancery L, cursive;
+    background-color: #3668ff;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#names {
+    text-align: center;
+}
+
+
+.footer-link {
+    text-align: center;
+}
+
+
+

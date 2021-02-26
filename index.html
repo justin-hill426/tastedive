@@ -3,17 +3,40 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Debugging JavaScript</title>
+  <title>Creative Project 2</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-
   <h1>Taste Dive</h1>
-
+  <div class = "container">
+    <p>This app uses the <a href="https://tastedive.com/read/api">TasteDive API</a> to
+      explore personalized information about something you love</p>
+    <form class="pure-form>" <fieldset>
+      <legend>Enter a Book, Music Artist, or Movie to get started</legend>
+      <input id="number" placeholder="Search For Something You Love">
+      <br>
+      <p></p>
+      <select id="selector">
+        <option value="book">Book</option>
+        <option value="artist">Music Artis</option>
+        <option value="movie">Movie</option>
+      </select>
+      <p></p>
+      <button id="woo" class="pure-button pure-button-primary">Woo!</button>
+      </fieldset>
+    </form>
+    <p id="results"></p>
+  </div>
+  
+  <footer>
+    <p id = "names">Justin Hill and Savannah Knight</p>
+    <div class = "footer-link">
+      <a href = "https://github.com/justin-hill426/tastedive">GitHub</a>
+    </div>
+  </footer>
   <script text="type/javascript" src="/script.js">
   </script>
-
 </body>
 
 </html>
