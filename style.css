@@ -11,6 +11,7 @@ body {
     font-family: URW Chancery L, cursive;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 h2, h3, p {
   font-family: 'Open Sans', sans-serif;
@@ -20,7 +21,6 @@ h2, h3, p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh
 }
 
 input {
@@ -39,7 +39,7 @@ text-align: center;
 
 footer {
     font-family: URW Chancery L, cursive;
-    background-color: #3668ff;
+    background-color: #c0d7fc;
     position: relative;
     bottom: 0;
     margin: 0 auto;
@@ -50,6 +50,12 @@ footer {
 #names {
     text-align: center;
 }
+
+.getCategory{	
+  text-align: center;	
+  justify-content: center;	
+}
+
 .random {
   /* background-color: #b5cef7; */
   text-align: center;
@@ -58,6 +64,19 @@ footer {
   /* margin: 2em;
   padding: 1em; */
 }
+
+.randomButton {	
+  text-align: center;	
+  justify-content: center;	
+  margin: 1em;	
+  padding: 1em;	
+}	
+/* #getRandom {	
+  text-align: center;	
+  justify-content: center;	
+  padding: 5em;	
+} */
+
 .enjoy {
    padding: 1em;
    text-transform: capitalize;
@@ -79,7 +98,6 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-@media only screen and (max-width: 400px) {
 
 .meal-grid {
     margin-bottom: 20px;
@@ -110,4 +128,5 @@ a, a:hover, a:focus {
       max-width: 87%;
       margin-left: 0;
     }
-  }
+}
+  
