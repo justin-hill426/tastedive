@@ -13,15 +13,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-h2, h3, p {
+h2, h3,h4, p, ol, li  {
 font-family: 'Open Sans', sans-serif;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-height: 100vh
+  justify-content: start;
 }
 
 input {
@@ -55,6 +54,25 @@ footer {
 text-align: center;
 justify-content: center;
 }
+
+.letterDiv{
+  text-align: center;
+  justify-content: center;
+  }
+
+#mealLetterInput {
+  min-width: fit-content;
+
+}
+
+#categoryInput {
+  min-width: fit-content;
+}
+
+#categorySubmit:hover, #mealLetterSubmit:hover {
+  background-color: #81838c;
+}
+
 .random {
 /* background-color: #b5cef7; */
 text-align: center;
@@ -69,34 +87,71 @@ justify-content: center;
 margin: 1em;
 padding: 1em;
 }
-/* #getRandom {
-text-align: center;
-justify-content: center;
-padding: 5em;
+#getRandom {
+min-width: fit-content;
+width: 20em;
+height: 3em;
+}
 
-} */
+#intro {
+  align-self: center;
+  margin: 1em;
+}
+
+#getRandom:hover {
+  background-color: #81838c;
+}
 .enjoy {
  padding: 1em;
  text-transform: capitalize;
- font-size: 3em;
+ font-size: 4em;
  font-weight: bolder;
  font-family: URW Chancery L, cursive;
 }
 .area {
-padding: 20px;
+  padding: 20px;	
+  font-size: 1.5em;
 }
-.image {
-width: 200px;
+.image {	
+  width: 300px;	
+}	
+.instructions {	
+  margin: 1.5em;	
+  margin-bottom: 2.5em;	
+  display: flex;	
+  background-color: #81838c;	
+  padding: 1em;	
+  padding-left: 40px;	
+  text-align: left;	
+  border-radius: 10px;	
+  /* justify-content:flex-start; */	
+  /* width: 300px; */	
+}	
+.instructionTitle{	
+  text-align: center;	
+  justify-content: center;	
+  font-size: 1.5em;	
+  margin-bottom: 0;	
+  background-color: #81838c;	
+  width: 200px;	
+  display: flex;	
+}	
+.mealName {	
+  font-size: 2em;	
 }
 .footer-link {
   text-align: center;
 }
 a, a:hover, a:focus {
-  color: inherit;
+  color: #81838c;
   text-decoration: none;
   transition: all 0.3s;
 }
-@media only screen and (max-width: 400px) {
+
+a:visited {
+  color:indigo;
+}
+
 
 .meal-grid {
   margin-bottom: 20px;
@@ -105,11 +160,13 @@ a, a:hover, a:focus {
   grid-column-gap: 10px;
   max-width: 97%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mealResults {
   width: 100%;
-  background-color: black;
+  background-color: #81838c;
   padding: 1em;
   margin: 1em 1em 1em 1em;
 }
@@ -119,6 +176,11 @@ a, a:hover, a:focus {
     grid-template-columns: 1fr 1fr;
     max-width: 93%;
   }
+  #getRandom {	
+    background-color: white;	
+    border-radius: 2.5px;	
+    padding: 20px;	
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -126,5 +188,10 @@ a, a:hover, a:focus {
     grid-template-columns: 1fr 1fr;
     max-width: 87%;
     margin-left: 0;
+  }
+  #getRandom {	
+    background-color: white;	
+    border-radius: 2.5px;	
+    padding: 20px;	
   }
 }

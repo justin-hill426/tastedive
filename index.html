@@ -14,25 +14,27 @@
   <h1>Taste Dive</h1>
 
   <div class = "container">
-    <p>This app uses the <a href="https://www.themealdb.com/api.php">MealDB API</a> to
+    <p id = "intro">This Web app uses the <a href="https://www.themealdb.com/api.php">MealDB API</a> to
       bring you new food and recipes</p>
-    <form class="pure-form>" <fieldset>
-      <!-- <legend>Enter a Book, Music Artist, or Movie to get started</legend> -->
-      <input id="mealLetterInput" type="text" placeholder="Search Meal By First Letter"></input><br/>
+      <div class="randomButton">
+        <input id="getRandom" type="submit" value="Generate Random Meal"></input>
+      </div>
+    <div class = "letterDiv">
+      <h2>Search Meals By First Letter</h2>
+      <input id="mealLetterInput" type="text" placeholder="Input Text Here"></input><br/>
       <input id="mealLetterSubmit" type="submit" value="Submit"></input>
+    </div>
+      
       <br>
       <p></p>
       </fieldset>
-    </form>
-    <div class="randomButton">
-      <input id="getRandom" type="submit" value="Generate Random Meal"></input>
-    </div>
-
+    
     <div class = "getCategory">
-      <input id="categoryInput" type="text" placeholder="Search Food By Category"></input><br/>
+      <h2>Search Food By Category</h2>
+      <input id="categoryInput" type="text" placeholder="Input Text Here"></input><br/>
       <input id="categorySubmit" type="submit" value="Submit"></input>
     </div>
-    <p id="results"></p>
+    <div id = "results"></div>
     <div id="randomResults"></div>
   </div>
 
