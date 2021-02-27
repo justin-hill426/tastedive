@@ -12,30 +12,30 @@
 
 <body>
   <h1>Taste Dive</h1>
-  <h3>Generate Random </h3>
-    <input id="getRandom" type="submit" value="Random"></input>
+
   <div class = "container">
     <p>This app uses the <a href="https://www.themealdb.com/api.php">MealDB API</a> to
       bring you new food and recipes</p>
-    
+    <form class="pure-form>" <fieldset>
+      <!-- <legend>Enter a Book, Music Artist, or Movie to get started</legend> -->
       <input id="mealLetterInput" type="text" placeholder="Search Meal By First Letter"></input><br/>
       <input id="mealLetterSubmit" type="submit" value="Submit"></input>
       <br>
       <p></p>
-      <p></p>
-      
-  
-      <div class="randomButton">	
-        <input id="getRandom" type="submit" value="Generate Random Meal"></input>	
-      </div>
-    <input id="getArea" type="submit" value="area"></input>
+      </fieldset>
+    </form>
+    <div class="randomButton">
+      <input id="getRandom" type="submit" value="Generate Random Meal"></input>
+    </div>
+
     <div class = "getCategory">
       <input id="categoryInput" type="text" placeholder="Search Food By Category"></input><br/>
       <input id="categorySubmit" type="submit" value="Submit"></input>
     </div>
     <p id="results"></p>
+    <div id="randomResults"></div>
   </div>
-  <div id="randomResults"></div>
+
   <script text="type/javascript" src="/script.js">
   </script>
   <footer>
